@@ -1,32 +1,32 @@
 <?php
 
-namespace Faker\Provider\lu_FR;
+namespace Faker\Provider\lu_LU;
 
 class Address extends \Faker\Provider\fr_FR\Address
 {
-    protected static $postcode = array('####');
+    protected static $postcode = ['####'];
 
-    protected static $streetAddressFormats = array(
+    protected static $streetAddressFormats = [
         '{{buildingNumber}}, {{streetName}}'
-    );
+    ];
 
-    protected static $streetNameFormats = array('{{streetSuffix}} {{lastName}}');
+    protected static $streetNameFormats = ['{{streetSuffix}} {{lastName}}'];
 
-    protected static $cityFormats = array('{{cityName}}');
+    protected static $cityFormats = ['{{cityName}}'];
 
-    protected static $addressFormats = array(
+    protected static $addressFormats = [
         "{{streetAddress}}\n {{postcode}} {{city}}",
-    );
+    ];
 
-    protected static $streetSuffix = array(
+    protected static $streetSuffix = [
         'rue', 'avenue', 'boulevard', 'place'
-    );
+    ];
 
     /**
      *
      * @var array
      */
-    protected static $cityNames = array(
+    protected static $cityNames = [
         'Altwies', 'Alzingen', 'Arsdorf', 'Aspelt', 'Bastendorf', 'Belvaux', 'Berbourg', 'Bereldange', 'Bertrange',
         'Bettembourg', 'Betzdorf', 'Beyren', 'Born', 'Bourglinster', 'Bous', 'Bridel', 'Canach', 'Capellen', 'Cents',
         'Clervaux', 'Colmar-Berg', 'Crauthem', 'Dahl', 'Dahlem', 'Dalheim', 'Diekirch', 'Differdange', 'Echternach',
@@ -40,11 +40,11 @@ class Address extends \Faker\Provider\fr_FR\Address
         'Rollingen', 'Rollingen (Mersch)', 'Rosport', 'Rumelange', 'Sandweiler', 'Sanem', 'Schoos', 'Schouweiler', 'Schrassig',
         'Schuttrange', 'Senningerberg', 'Soleuvre', 'Steinsel', 'Strassen', 'Tétange', 'Troisvierges', 'Tuntange', 'Uebersyren',
         'Useldange', 'Vianden', 'Warken', 'Wasserbillig', 'Weicherdange', 'Weiler', 'Welfrange', 'Wiltz', 'Wilwerwiltz', 'Wormeldange'
-    );
+    ];
 
-    protected static $region = array();
+    protected static $region = [];
 
-    protected static $province = array();
+    protected static $province = [];
 
     /**
      * Randomly returns a luxembourgish province.

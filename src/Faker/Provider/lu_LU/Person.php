@@ -1,10 +1,10 @@
 <?php
 
-namespace Faker\Provider\lu_FR;
+namespace Faker\Provider\lu_LU;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $firstNameMale = array(
+    protected static $firstNameMale = [
         'Adriano','Adrien','Agnès','Alessandro','Alex','Alain','Alix','André','Antonio','Armand','Arthur','Christian',
         'Christophe','Claude','David','Didace','Dietmar','Diogo','Dominique','Dunja','Edgar','Edith','Edouard','Edvard',
         'Edy','Egide','Erik','Fabien','Favero-Krieger','Felix','Félix','Fernand','Francesco','Gilbert','Gilles','Guillaume',
@@ -12,9 +12,9 @@ class Person extends \Faker\Provider\Person
         'Lucien','Mark','Moris','Nico','Nicolas','Nils','Njabu','Onyszczuk','Otmar','Paolo','Pascal','Pierre','Raffael',
         'Raphael','Raymond','Régis','René','Robert','Roberto','Robi','Roby','Roger','Romain','Roy','Sam','Samuel','Sandro',
         'Steve','Sylvain','Vic','Werner','Willem','Willy','Xavier','Yves'
-    );
+    ];
 
-    protected static $firstNameFemale = array(
+    protected static $firstNameFemale = [
         'Admira','Aicha','Alessandra','Alexandra','Alicia','Aline','Alma','Amandine','Amélie','Ana','Anais','Andrea',
         'Anne','Anne-Claire','Anne-Françoise','Anne-Marie','Annemie','Anne-Sophie','Annick','Annie','Annik','Anouk',
         'Audrey','Aurea','Aurélie','Aurore','Barbara','Bénédicte','Bernadette','Carmen','Carole','Caroline','Carolyn',
@@ -30,9 +30,9 @@ class Person extends \Faker\Provider\Person
         'Sabine','Sabrina','Sabrine','Sandra','Sandrine','Sandy','Sarah','Simone','Sofia','Sonia','Sonja','Sophie',
         'Spina','Stéfania','Steffi','Stella','Steph','Stephanie','Stéphanie','Suzi','Sylvia','Sylvie','Tamara',
         'Tania','Tanja','Valérie','Vanessa','Vasilica','Vera','Véra','Véronique','Virginie','Viviane','Yasmine','Yolande'
-    );
+    ];
 
-    protected static $lastName = array(
+    protected static $lastName = [
         'Acque','Adjadia','Aflalo','Agostino','Alati','Almeida','Alves','Anacleto','Andrade',
         'Anen','Angeli','Antinori','Antoine','Antony','Arendt','Arnoldy','Arrensdorff','Azzouzi',
         'Bialkowski','Bichel','Biever','Bigelbach-Friederich','Bintener','Bisceglie','Bissen','Bissener','Biwer','Blasetti',
@@ -58,10 +58,9 @@ class Person extends \Faker\Provider\Person
         'Schannel','Schares','Schaul','Schilling-Bebing','Schlesser','Schlim','Schlinker','Schmit','Schmitt','Schockert',
         'Schockweiler','Schoels','Scholtes','Scholzen','Schubert','Schummer','Schummer-Régin','Schwachtgen','Seckler','Serangeli',
         'Streitz','Thies','Thunus','Toussaint','Tranter','Turk','Valdagno','Valoy','van de Walle','Van Gemert',
+    ];
 
-    );
+    protected static $titleMale = ['M.', 'Dr.', 'Pr.', 'Me.', 'Mgr'];
 
-    protected static $titleMale = array('M.', 'Dr.', 'Pr.', 'Me.', 'Mgr');
-
-    protected static $titleFemale = array('Mme.', 'Dr.', 'Pr.', 'Me.');
+    protected static $titleFemale = ['Mme.', 'Dr.', 'Pr.', 'Me.'];
 }
