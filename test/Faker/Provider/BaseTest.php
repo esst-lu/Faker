@@ -333,6 +333,7 @@ final class BaseTest extends TestCase
             ['[aeiou]', 'basic character class'],
             ['[a-z]', 'character class range'],
             ['[a-z1-9]', 'multiple character class range'],
+            ['[a-z\-]{4}', 'character class range with quantifier and escaped character'],
             ['a*b+c?', 'single character quantifiers'],
             ['a{2}', 'brackets quantifiers'],
             ['a{2,3}', 'min-max brackets quantifiers'],
@@ -401,7 +402,7 @@ final class BaseTest extends TestCase
         $values = [];
 
         for ($i = 0; $i < 10; ++$i) {
-            $values[] = $faker->optional(50)->randomDigit;
+            $values[] = $faker->optional(0.5)->randomDigit;
         }
         self::assertContains(null, $values);
     }
@@ -532,11 +533,11 @@ final class BaseTest extends TestCase
         }
     }
 
-    public function testValidThrowsExceptionWhenParameterIsNotCollable()
+    public function testValidThrowsExceptionWhenParameterIsNotCallable()
     {
-        $this->expectException(\InvalidArgumentException::class);
         $faker = new \Faker\Generator();
         $faker->addProvider(new \Faker\Provider\Base($faker));
+        $this->expectException(\TypeError::class);
         $faker->valid(12)->randomElement([1, 3, 5, 7, 9]);
     }
 
