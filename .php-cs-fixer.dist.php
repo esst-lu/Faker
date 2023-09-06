@@ -54,6 +54,10 @@ return $config
                 'yield',
             ],
         ],
+        'blank_lines_before_namespace' => [
+            'max_line_breaks' => 2,
+            'min_line_breaks' => 2,
+        ],
         'cast_spaces' => true,
         'class_attributes_separation' => [
             'elements' => [
@@ -70,7 +74,6 @@ return $config
         'curly_braces_position' => true,
         'declare_equal_normalize' => true,
         'declare_parentheses' => true,
-        'function_typehint_space' => true,
         'general_phpdoc_annotation_remove' => [
             'annotations' => [
                 'author',
@@ -184,9 +187,9 @@ return $config
         'random_api_migration' => true,
         'return_assignment' => true,
         'return_type_declaration' => true,
+        'self_static_accessor' => true,
         'semicolon_after_instruction' => true,
         'short_scalar_cast' => true,
-        'single_blank_line_before_namespace' => true,
         'single_line_comment_style' => true,
         'single_quote' => true,
         'single_space_around_construct' => [
@@ -219,6 +222,11 @@ return $config
             ],
         ],
         'trim_array_spaces' => true,
+        'type_declaration_spaces' => [
+            'elements' => [
+                'function',
+            ],
+        ],
         'unary_operator_spaces' => true,
         'visibility_required' => [
             'elements' => [
